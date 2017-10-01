@@ -17,6 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		
+		<activity
+            android:name=".webpagesActivity"
+            android:label="@string/app_name" >
+        </activity>
+		
+		<activity
+            android:name=".aboutActivity"
+            android:label="@string/app_name" >
+        </activity>
+		
+		
     </application>
 
 </manifest>
