@@ -5,22 +5,7 @@
 	android:layout_width="match_parent"
 	android:orientation="vertical">
 
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Button"/>
-
-	<LinearLayout
-		android:layout_height="match_parent"
-		android:layout_width="match_parent"
-		android:gravity="center">
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="OK"/>
-
-	</LinearLayout>
+	
 
 	<TextView
 		android:layout_width="wrap_content"
@@ -34,5 +19,31 @@
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:text="Small Text"/>
 
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Button"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Button"/>
+
+	
+	
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="OK"/>
+
+	</LinearLayout>
+	
+	
+	
 </LinearLayout>
 
