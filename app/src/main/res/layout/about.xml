@@ -3,47 +3,22 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:orientation="vertical">
+	android:orientation="vertical"
+	android:padding="20dp">
 
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceSmall"
-		android:text="Small Text"
-		style="@style/AppTheme"/>
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="O Aplikaci"
+		android:padding="10dp"/>
 
-	<LinearLayout
-		android:layout_height="match_parent"
-		android:layout_width="match_parent"
-		android:orientation="horizontal"
-		android:layout_margin="10dp">
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"
-			android:layout_gravity="center|center_vertical|center_horizontal"
-			android:shadowColor="#000000"
-			android:shadowDx="1.0"
-			android:shadowDy="1.0"
-			android:hint="okeee"/>
-
-	</LinearLayout>
-
-	<LinearLayout
-		android:layout_height="match_parent"
-		android:layout_width="match_parent"
-		android:orientation="horizontal"
-		android:layout_margin="10dp">
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"
-			android:layout_gravity="center|center_vertical|center_horizontal"
-			android:typeface="monospace"/>
-
-	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="© 2017 Copyright M Nestina"
+		android:padding="10dp"/>
 
 </LinearLayout>
 
