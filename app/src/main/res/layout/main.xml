@@ -86,30 +86,48 @@
 			android:onClick="onAbout"/>
 
 	</LinearLayout>
-
+	
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:background="#FA0E00">
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Text"/>
-
-	</LinearLayout>
-
-	<LinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content">
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="vertical"
+		android:onClick="onForum">
 
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:text="Large Text"/>
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Forum"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="info"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Forum"
+			android:layout_gravity="bottom|right"
+			android:onClick="onForum"/>
 
 	</LinearLayout>
+	
+	
+	
+
+	<AbsoluteLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:background="@drawable/image_bg_03"
+		android:scaleX="1.0"
+		android:scaleY="1.0"
+		android:clipChildren="true"
+		android:clipToPadding="true"
+		android:elevation="10dp"
+		android:layout_margin="10dp"
+		android:layout_gravity="top|left"/>
 
 </LinearLayout>
 
