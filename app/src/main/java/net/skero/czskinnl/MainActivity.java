@@ -18,6 +18,13 @@ public class MainActivity extends Activity
     }
 
 
+	
+	public void on_start(View v)
+	{
+		Intent i = new Intent(this, startActivity.class);
+		startActivity(i);
+	}
+	
 
 	public void onWebPages(View v)
 	{
@@ -29,27 +36,20 @@ public class MainActivity extends Activity
 
 		Intent i = new Intent(this, webpagesActivity.class);
 		startActivity(i);
-
 	}
 
+	
 	public void onForum(View v)
 	{
-
 		Intent i = new Intent(this, forumActivity.class);
 		startActivity(i);
-
 	}
-
-
-
-
+	
 
 	public void onAbout(View v)
 	{
-
 		Intent i = new Intent(this, aboutActivity.class);
 		startActivity(i);
-
 	}
 
 
