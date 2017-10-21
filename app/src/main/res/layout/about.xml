@@ -13,12 +13,30 @@
 		android:text="O Aplikaci"
 		android:padding="10dp"/>
 
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:text="© 2017 Copyright M Nestina"
 		android:padding="10dp"/>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="bottom|right"
+		android:padding="10dp">
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
 
 </LinearLayout>
 

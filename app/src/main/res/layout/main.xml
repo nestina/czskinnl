@@ -1,133 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_height="match_parent"
 	android:layout_width="match_parent"
+	tools:context=".MainActivity"
 	android:orientation="vertical"
 	android:background="@drawable/image_bg_01">
 
-	<LinearLayout
-		android:layout_height="wrap_content"
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
 		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="vertical"
-		android:onClick="onWebPages">
+		android:layout_height="?attr/actionBarSize"/>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:text="Webove stránky"/>
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Webove stranky o holandsku a vsetko o cestovani, bydleni, praci atd ..."/>
+	<LinearLayout
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:gravity="center|center_vertical|center_horizontal">
 
 		<Button
+			style="?android:attr/buttonBarButtonStyle"
 			android:layout_height="wrap_content"
 			android:layout_width="wrap_content"
-			android:text="Button"
-			android:layout_gravity="bottom|right"
-			android:onClick="onWebPages"/>
+			android:text="Start / Domou"
+			android:id="@+id/main_button_start"
+			android:onClick="onMainButton"
+			android:textColor="#000000"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textStyle="bold"
+			android:shadowColor="#000000"
+			android:shadowRadius="2"/>
+
+		<View
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="1dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Info"
+			android:id="@+id/main_button_info"
+			android:onClick="onMainButton"
+			android:textColor="#000000"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textStyle="bold"
+			android:shadowRadius="2"
+			android:shadowColor="#000000"/>
+
+		<View
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="1dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Fórum"
+			android:id="@+id/main_button_forum"
+			android:onClick="onMainButton"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"
+			android:shadowColor="#000000"
+			android:shadowRadius="3"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="vertical"
-		android:onClick="onWebPages">
+		android:background="#FF0F00">
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:text="Webove stránky"/>
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Webove stranky o holandsku a vsetko o cestovani, bydleni, praci atd ..."/>
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"
-			android:layout_gravity="bottom|right"
-			android:onClick="onWebPages"/>
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#0800FB"/>
 
 	</LinearLayout>
 
-	<LinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="vertical"
-		android:onClick="onWebPages">
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:text="Webove stránky"/>
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Webove stranky o holandsku a vsetko o cestovani, bydleni, praci atd ..."/>
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"
-			android:layout_gravity="bottom|right"
-			android:onClick="onAbout"/>
-
-	</LinearLayout>
-	
-	<LinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="vertical"
-		android:onClick="onForum">
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:text="Forum"/>
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="info"/>
-
-		<Button
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Forum"
-			android:layout_gravity="bottom|right"
-			android:onClick="onForum"/>
-
-	</LinearLayout>
-	
-	
-	
-
-	<AbsoluteLayout
+	<FrameLayout
 		android:layout_height="match_parent"
 		android:layout_width="match_parent"
-		android:background="@drawable/image_bg_03"
-		android:scaleX="1.0"
-		android:scaleY="1.0"
-		android:clipChildren="true"
-		android:clipToPadding="true"
-		android:elevation="10dp"
-		android:layout_margin="10dp"
-		android:layout_gravity="top|left"/>
+		android:id="@+id/content_frame"
+		android:visibility="visible"/>
 
 </LinearLayout>
 

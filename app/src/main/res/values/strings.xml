@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	
     <string name="app_name">Češi a Slováci v Holandsku</string>
     <string name="hello_world">Hello world!</string>
 
+	<string name="name">text</string>
+	
+	
+	<string name="f_start_caption">Novynky a rychlý vyber</string>
+	<string name="f_start_info">Novynky a najcastejsi vyber</string>
+	
+	
+	
+	
+	
+	
+	
 </resources>

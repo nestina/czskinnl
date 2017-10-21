@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_start"
+        android:title="Start"/>
+	
+	<item
+        android:id="@+id/main_menu_info"
+        android:title="Informace"/>
+	
+	<item
+        android:id="@+id/main_menu_forum"
+        android:title="Forum"/>
+	
+	<item 
+		android:id="@+id/main_menu_settings"
+		android:title="Nastavení"/>
+
+	<item
+        android:id="@+id/main_menu_about"
+        android:title="O Aplikaci"/>
+
+</menu>
